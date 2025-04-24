@@ -10,126 +10,116 @@
       padding: 0;
       font-family: 'Bookman Old Style', serif;
       background-color: #fefcfb;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      flex-direction: column;
+      color: #3c3c3b;
+      line-height: 1.6;
     }
     .container {
-      text-align: center;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+    .intro {
       background: white;
       padding: 40px;
       border-radius: 12px;
       box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-      width: 80%;
-      max-width: 800px;
-      transition: all 0.5s ease-in-out;
+      text-align: center;
+      margin-bottom: 40px;
     }
     h1 {
       font-size: 2rem;
       margin-bottom: 20px;
-      color: #3c3c3b;
-      opacity: 0;
-      animation: fadeIn 1s forwards;
     }
-    p {
+    p.tagline {
       font-size: 1rem;
       margin-bottom: 30px;
-      color: #3c3c3b;
-      opacity: 0;
-      animation: fadeIn 2s forwards;
     }
-    a.button {
-      padding: 12px 24px;
-      background-color: #a3b18a;
-      color: white;
-      text-decoration: none;
-      border-radius: 8px;
-      font-weight: bold;
-      transition: background-color 0.3s, transform 0.3s;
+    .resume {
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.05);
     }
-    a.button:hover {
-      background-color: #8d9f78;
-      transform: scale(1.1);
-    }
-    #resume {
-      display: none;
+    h2 {
       margin-top: 40px;
-      font-size: 1rem;
-      color: #3c3c3b;
-      text-align: left;
-    }
-    #resume h2 {
-      color: #a3b18a;
       font-size: 1.5rem;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 5px;
     }
-    #resume p {
-      line-height: 1.8;
+    ul {
+      padding-left: 20px;
     }
-
-    /* FadeIn animation */
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-      }
-      to {
-        opacity: 1;
-      }
+    .section {
+      margin-top: 20px;
+    }
+    a {
+      color: #a3b18a;
+      text-decoration: none;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>Hello there! I'm Princess</h1>
-    <p>A Social Media Manager, Customer Service Expert, Graphic Artist, Content Writer, and Layout Designer with a deep passion for creativity and innovation. I'm driven to push boundaries and make a positive impact through my work.</p>
-    <a href="javascript:void(0);" class="button" onclick="showResume()">View My Resume</a>
-    
-    <div id="resume">
-      <h2>PRINCESS TULANG TABUGOC</h2>
-      <p>Davao City, Davao Del Sur, PH | +639 1260 72643 | princesstabugoc123@gmail.com<br>
+    <div class="intro">
+      <h1>Hello there! I'm Princess</h1>
+      <p class="tagline">A Social Media Manager, Customer Service Expert, Graphic Artist, Content Writer, and Layout Designer with a deep passion for creativity and innovation. I'm driven to push boundaries and make a positive impact through my work.</p>
+    </div>
+
+    <div class="resume">
+      <h2>Princess Tulang Tabugoc</h2>
+      <p>Davao City, Davao Del Sur, PH | +639 1260 72643 | <a href="mailto:princesstabugoc123@gmail.com">princesstabugoc123@gmail.com</a><br />
       <a href="https://www.linkedin.com/in/princess-tabugoc-888342335/" target="_blank">LinkedIn</a></p>
 
-      <h3>PROFILE</h3>
-      <p>With a well-rounded background in virtual assistance, e-commerce, digital marketing, affiliate marketing, and freelancing, I’ve developed a versatile and results-driven skill set. I am computer literate, tech-savvy, and equipped with strong oral and written communication skills. Over the years, I’ve gained hands-on experience in lesson planning, digital marketing strategy, and e-commerce management. My career journey reflects a growth-oriented mindset, adaptability, and a focus on delivering measurable results in fast-paced digital environments. Each role has strengthened my ability to streamline operations, support clients at a high level, and drive success through smart and strategic actions.</p>
-      
-      <h3>EDUCATION</h3>
-      <p>University of Southeastern Philippines<br>
-      Bachelor of Technical Vocational Teacher Education (2020 - 2024)</p>
+      <div class="section">
+        <h2>Profile</h2>
+        <p>With a well-rounded background in virtual assistance, e-commerce, digital marketing, affiliate marketing, and freelancing, I’ve developed a versatile and results-driven skill set. I am computer literate, tech-savvy, and equipped with strong oral and written communication skills. Over the years, I’ve gained hands-on experience in lesson planning, digital marketing strategy, and e-commerce management. My career journey reflects a growth-oriented mindset, adaptability, and a focus on delivering measurable results in fast-paced digital environments.</p>
+      </div>
 
-      <h3>WORK EXPERIENCE</h3>
-      <p><strong>Digital Marketing / Affiliate</strong><br>
-      Created digital products and executed marketing strategies to enhance brand visibility.<br>
-      Optimized social media and email campaigns based on performance analysis.</p>
+      <div class="section">
+        <h2>Education</h2>
+        <p><strong>University of Southeastern Philippines</strong><br />
+        Bachelor of Technical Vocational Teacher Education<br />
+        2020 - 2024</p>
+      </div>
 
-      <p><strong>ESL Tutor (June 2022 - May 2024; March 2025)</strong><br>
-      Delivered engaging and personalized English lessons to non-native speakers, focusing on speaking, listening, reading, and writing skills.<br>
-      Adapted teaching methods to suit individual student needs, improving language proficiency and boosting confidence.<br>
-      Provided constructive feedback and support to help students achieve their academic, professional, or personal language goals.</p>
+      <div class="section">
+        <h2>Work Experience</h2>
+        <p><strong>Digital Marketing / Affiliate</strong><br />
+        - Created digital products and executed marketing strategies to enhance brand visibility.<br />
+        - Optimized social media and email campaigns based on performance analysis.</p>
 
-      <p><strong>LGU - Lupon (MENRO, July 2024 - Feb 2025)</strong><br>
-      Provided clerical support, including managing correspondence, filing, and maintaining records.<br>
-      Assisted with the coordination and processing of service requests, ensuring customer satisfaction.</p>
+        <p><strong>ESL Tutor</strong> (June 2022 - May 2024, resumed March 2025)<br />
+        - Delivered engaging and personalized English lessons to non-native speakers.<br />
+        - Adapted methods to suit individual needs, boosting proficiency and confidence.<br />
+        - Provided constructive feedback to help students meet academic and personal goals.</p>
 
-      <p><strong>Peak Support LLC</strong><br>
-      Provided end-to-end customer support, including order assistance, inquiries, complaints, returns, and product information, ensuring high customer satisfaction.<br>
-      Resolved website navigation and technical issues while promoting products to drive sales growth.<br>
-      Managed e-commerce operations such as product listings, order processing, and customer support, contributing to smooth digital marketing and sales efforts.</p>
+        <p><strong>LGU-Lupon (MENRO)</strong> (July 2024 - Feb 2025)<br />
+        - Provided clerical support, managed correspondence, and maintained records.<br />
+        - Assisted in processing service requests, ensuring satisfaction.</p>
 
-      <h3>ON-THE-JOB TRAINING (Dec 2022 - Dec 2024)</h3>
-      <p><strong>Davao City National High School</strong><br>
-      Student Intern, Electrical Multi-Skills and Allied Services<br>
-      Data Manager/Encoder/Customer Service Expert</p>
+        <p><strong>Peak Support LLC</strong><br />
+        - Delivered end-to-end customer support and technical issue resolution.<br />
+        - Promoted products and managed e-commerce operations.</p>
 
-      <h3>EXPERTISE</h3>
-      <p>Communication, Problem-solving, Digital Marketing & Strategy, Customer Service, Data Entry, MS Excel, Canva, MS Office, Calendar Management, Shopify, Gorgias, Growth-Oriented Mindset</p>
+        <p><strong>On-the-Job Training</strong> (Dec 2022 - Dec 2024)<br />
+        <em>Davao City National High School</em><br />
+        Student Intern, Electrical Multi-Skills and Allied Services<br />
+        - Data Manager, Encoder, Customer Service</p>
+      </div>
+
+      <div class="section">
+        <h2>Expertise</h2>
+        <ul>
+          <li>Communication</li>
+          <li>Problem-solving</li>
+          <li>Digital Marketing & Strategy</li>
+          <li>Customer Service</li>
+          <li>Data Entry</li>
+          <li>MS Excel, Canva, MS Office, Calendar Management, Shopify, Gorgias</li>
+          <li>Growth-Oriented Mindset</li>
+        </ul>
+      </div>
     </div>
   </div>
-
-  <script>
-    function showResume() {
-      document.getElementById("resume").style.display = "block";
-    }
-  </script>
 </body>
 </html>
