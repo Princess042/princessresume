@@ -14,6 +14,7 @@
       align-items: center;
       justify-content: center;
       height: 100vh;
+      flex-direction: column;
     }
     .container {
       text-align: center;
@@ -21,16 +22,23 @@
       padding: 40px;
       border-radius: 12px;
       box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+      width: 80%;
+      max-width: 800px;
+      transition: all 0.5s ease-in-out;
     }
     h1 {
       font-size: 2rem;
       margin-bottom: 20px;
       color: #3c3c3b;
+      opacity: 0;
+      animation: fadeIn 1s forwards;
     }
     p {
       font-size: 1rem;
       margin-bottom: 30px;
       color: #3c3c3b;
+      opacity: 0;
+      animation: fadeIn 2s forwards;
     }
     a.button {
       padding: 12px 24px;
@@ -39,10 +47,35 @@
       text-decoration: none;
       border-radius: 8px;
       font-weight: bold;
-      transition: background-color 0.3s;
+      transition: background-color 0.3s, transform 0.3s;
     }
     a.button:hover {
       background-color: #8d9f78;
+      transform: scale(1.1);
+    }
+    #resume {
+      display: none;
+      margin-top: 40px;
+      font-size: 1rem;
+      color: #3c3c3b;
+      text-align: left;
+    }
+    #resume h2 {
+      color: #a3b18a;
+      font-size: 1.5rem;
+    }
+    #resume p {
+      line-height: 1.8;
+    }
+
+    /* FadeIn animation */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
     }
   </style>
 </head>
@@ -50,7 +83,53 @@
   <div class="container">
     <h1>Hello there! I'm Princess</h1>
     <p>A Social Media Manager, Customer Service Expert, Graphic Artist, Content Writer, and Layout Designer with a deep passion for creativity and innovation. I'm driven to push boundaries and make a positive impact through my work.</p>
-    <a href="your-resume-link.pdf" class="button" target="_blank">View My Resume</a>
+    <a href="javascript:void(0);" class="button" onclick="showResume()">View My Resume</a>
+    
+    <div id="resume">
+      <h2>PRINCESS TULANG TABUGOC</h2>
+      <p>Davao City, Davao Del Sur, PH | +639 1260 72643 | princesstabugoc123@gmail.com<br>
+      <a href="https://www.linkedin.com/in/princess-tabugoc-888342335/" target="_blank">LinkedIn</a></p>
+
+      <h3>PROFILE</h3>
+      <p>With a well-rounded background in virtual assistance, e-commerce, digital marketing, affiliate marketing, and freelancing, I’ve developed a versatile and results-driven skill set. I am computer literate, tech-savvy, and equipped with strong oral and written communication skills. Over the years, I’ve gained hands-on experience in lesson planning, digital marketing strategy, and e-commerce management. My career journey reflects a growth-oriented mindset, adaptability, and a focus on delivering measurable results in fast-paced digital environments. Each role has strengthened my ability to streamline operations, support clients at a high level, and drive success through smart and strategic actions.</p>
+      
+      <h3>EDUCATION</h3>
+      <p>University of Southeastern Philippines<br>
+      Bachelor of Technical Vocational Teacher Education (2020 - 2024)</p>
+
+      <h3>WORK EXPERIENCE</h3>
+      <p><strong>Digital Marketing / Affiliate</strong><br>
+      Created digital products and executed marketing strategies to enhance brand visibility.<br>
+      Optimized social media and email campaigns based on performance analysis.</p>
+
+      <p><strong>ESL Tutor (June 2022 - May 2024; March 2025)</strong><br>
+      Delivered engaging and personalized English lessons to non-native speakers, focusing on speaking, listening, reading, and writing skills.<br>
+      Adapted teaching methods to suit individual student needs, improving language proficiency and boosting confidence.<br>
+      Provided constructive feedback and support to help students achieve their academic, professional, or personal language goals.</p>
+
+      <p><strong>LGU - Lupon (MENRO, July 2024 - Feb 2025)</strong><br>
+      Provided clerical support, including managing correspondence, filing, and maintaining records.<br>
+      Assisted with the coordination and processing of service requests, ensuring customer satisfaction.</p>
+
+      <p><strong>Peak Support LLC</strong><br>
+      Provided end-to-end customer support, including order assistance, inquiries, complaints, returns, and product information, ensuring high customer satisfaction.<br>
+      Resolved website navigation and technical issues while promoting products to drive sales growth.<br>
+      Managed e-commerce operations such as product listings, order processing, and customer support, contributing to smooth digital marketing and sales efforts.</p>
+
+      <h3>ON-THE-JOB TRAINING (Dec 2022 - Dec 2024)</h3>
+      <p><strong>Davao City National High School</strong><br>
+      Student Intern, Electrical Multi-Skills and Allied Services<br>
+      Data Manager/Encoder/Customer Service Expert</p>
+
+      <h3>EXPERTISE</h3>
+      <p>Communication, Problem-solving, Digital Marketing & Strategy, Customer Service, Data Entry, MS Excel, Canva, MS Office, Calendar Management, Shopify, Gorgias, Growth-Oriented Mindset</p>
+    </div>
   </div>
+
+  <script>
+    function showResume() {
+      document.getElementById("resume").style.display = "block";
+    }
+  </script>
 </body>
 </html>
